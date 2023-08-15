@@ -1,0 +1,4 @@
+def deployToKubernetes() {
+    def kubeconfig = credentials('your-kube-config-id')
+    sh "kubectl --kubeconfig=${kubeconfig} apply -f your-kubernetes-deployment.yaml"
+}
