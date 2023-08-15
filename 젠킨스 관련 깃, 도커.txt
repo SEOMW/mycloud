@@ -1,0 +1,38 @@
+docker run -itd -p 8080:8080 --name jenkins -v jenkins-volume:/var/jenkins_home/ -v /var/run/docker.sock:/var/run/docker.sock -v $(which docker):/usr/bin/docker --group-add 998 jenkins/jenkins:2.387.2-lts
+
+
+
+ngrok http 8080
+
+
+docker exec -t jenkins /bin/bash -c "cat /var/jenkins_home/secrets/initialAdminPassword"
+
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+ /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+
+
+
+
+yznflofngakvkxdq 앱비밀번호
+
+*1ed820cddf2e4961a79d567e6381c39d
+
+
+
+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
+
+
+dckr_pat_kr1NoD11Atfa_uPpAcBdAL2g4jc
+
+pipeline
+
+
+
+
+
+spring -cicd
+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
+
+private-project
+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
